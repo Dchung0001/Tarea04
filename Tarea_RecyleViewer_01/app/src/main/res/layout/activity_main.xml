@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/activity_actionbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></include>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/flbtnFavorito"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_alignBottom="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="36dp"
+        android:src="@drawable/icons8_hotel_50"
+        app:backgroundTint="@android:color/background_light" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RcCachorro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/flbCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="24dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/background_light"
+        app:srcCompat="@drawable/icons8_camera_40" />
+
+</RelativeLayout>
